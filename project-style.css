@@ -1,0 +1,136 @@
+/* === GOOGLE FONTS & VARIABLES === */
+:root {
+  /* Dark Theme (Default) */
+  --bg-color: #111827;
+  --primary-color: #1f2937;
+  --secondary-color: #374151;
+  --accent-color: #38bdf8;
+  --accent-hover: #7dd3fc;
+  --text-color: #d1d5db;
+  --heading-color: #f9fafb;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+}
+
+/* === BASE STYLES === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+/* === PROJECT PAGE LAYOUT === */
+.project-detail-container {
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: var(--primary-color);
+  border-radius: 12px;
+  border: 1px solid var(--secondary-color);
+}
+
+.project-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--secondary-color);
+  padding-bottom: 1.5rem;
+}
+
+.project-header h1 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--heading-color);
+  margin-bottom: 0.5rem;
+}
+
+.project-header .back-link {
+  font-size: 1rem;
+}
+
+.project-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--secondary-color);
+}
+
+.project-info h2 {
+  font-family: var(--font-heading);
+  color: var(--heading-color);
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.project-info p, .project-info ul {
+  margin-bottom: 1.5rem;
+}
+
+.project-info ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.project-info li {
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.project-info li::before {
+  content: '✓';
+  color: var(--accent-color);
+  position: absolute;
+  left: 0;
+}
+
+.btn {
+  background: var(--accent-color);
+  padding: 0.8rem 1.8rem;
+  border-radius: 8px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--bg-color);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(56, 189, 248, 0.2);
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .project-content {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahil Singh | Portfolio</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Sahil Singh</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#profiles">Profiles</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-switcher">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span id="typed-text"></span> 👋</h1>
+      <p>
+        Software Developer passionate about <strong>AI, NLP, and Generative AI</strong>.  
+        I build intelligent, practical solutions with <strong>DSA precision</strong>  
+        and <strong>AI-driven innovation</strong>.
+      </p>
+      <a href="#projects" class="btn">🚀 See My Work</a>
+    </div>
+    <div class="hero-img">
+      <img src="assets/profile.jpg" alt="Sahil Singh">
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-item">
+        <div class="project-info">
+          <div class="project-header">PolicyPal</div>
+          <p class="project-description">An AI-powered RAG project that automates insurance claim adjudication.</p>
+        </div>
+        <div class="project-popup">
+          <p>This project uses Retrieval-Augmented Generation to analyze insurance policies and streamline the claims process, reducing manual effort and improving accuracy.</p>
+          <a href="project_pages/policypal.html" class="btn">Description</a>
+          <a href="https://github.com/sahilraj87083/PolicyPal" target="_blank" class="btn">Go to Source</a>
+        </div>
+      </div>
+      <div class="project-item">
+        <div class="project-info">
+          <div class="project-header">TubeTalk</div>
+          <p class="project-description">A real-time chatbot for querying YouTube video transcripts using RAG.</p>
+        </div>
+        <div class="project-popup">
+          <p>TubeTalk allows users to have a conversation with any YouTube video, asking specific questions about its content and getting instant, accurate answers.</p>
+          <a href="project_pages/tubetalk.html" class="btn">Description</a>
+          <a href="https://github.com/sahilraj87083/TubeTalk" target="_blank" class="btn">Go to Source</a>
+        </div>
+      </div>
+      <div class="project-item">
+        <div class="project-info">
+          <div class="project-header">LinkedIn Post Generator</div>
+          <p class="project-description">Generates professional and engaging LinkedIn posts with AI-driven content.</p>
+        </div>
+        <div class="project-popup">
+          <p>This tool helps users create high-quality content for their LinkedIn profiles, saving time and boosting engagement with AI-powered suggestions and writing.</p>
+          <a href="project_pages/linkedin_post_generator.html" class="btn">Description</a>
+          <a href="https://github.com/sahilraj87083/Linkedin-Post-Generator" target="_blank" class="btn">Go to Source</a>
+        </div>
+      </div>
+      <div class="project-item">
+        <div class="project-info">
+          <div class="project-header">Cold Mail Generator</div>
+          <p class="project-description">An AI-powered tool to automatically generate impactful cold emails.</p>
+        </div>
+        <div class="project-popup">
+          <p>Designed for sales and outreach, this tool crafts personalized and effective cold emails, increasing response rates and generating leads automatically.</p>
+          <a href="project_pages/coldmail_generator.html" class="btn">Description</a>
+          <a href="https://github.com/sahilraj87083/cold-mail-generator" target="_blank" class="btn">Go to Source</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="profiles" class="coding-profiles">
+    <h2>Coding Profiles</h2>
+    <div class="profiles-container">
+      <div class="profile-item">
+        <p class="platform-name">LeetCode</p>
+        <a href="https://leetcode.com/sahilraj87093/" target="_blank" class="btn visit-btn">Visit Profile</a>
+      </div>
+      <div class="profile-item">
+        <p class="platform-name">GitHub</p>
+        <a href="https://github.com/sahilraj87083" target="_blank" class="btn visit-btn">Visit Profile</a>
+      </div>
+      <div class="profile-item">
+        <p class="platform-name">GeeksForGeeks</p>
+        <a href="https://www.geeksforgeeks.org/user/sahilraj87093/" target="_blank" class="btn visit-btn">Visit Profile</a>
+      </div>
+      <div class="profile-item">
+        <p class="platform-name">Codeforces</p>
+        <a href="https://codeforces.com/profile/sahilraj87093" target="_blank" class="btn visit-btn">Visit Profile</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skill-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="ai">AI/ML</button>
+      <button class="filter-btn" data-filter="framework">Frameworks</button>
+      <button class="filter-btn" data-filter="tools">Tools</button>
+    </div>
+    <div class="skill-list">
+      <span data-category="tools">DSA</span>
+      <span data-category="ai">AI</span>
+      <span data-category="ai">NLP</span>
+      <span data-category="ai">Machine Learning</span>
+      <span data-category="ai">Deep Learning</span>
+      <span data-category="ai">Generative AI</span>
+      <span data-category="ai">RAG</span>
+      <span data-category="ai">Agentic AI</span>
+      <span data-category="framework">PyTorch</span>
+      <span data-category="framework">LangChain</span>
+      <span data-category="framework">LangGraph</span>
+      <span data-category="tools">OpenCV</span>
+      <span data-category="tools">SQL</span>
+      <span data-category="tools">Git & GitHub</span>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <p>Let’s connect! You can find me on these platforms or drop me a message directly.</p>
+        <div class="contact-links">
+          <a href="mailto:sahilraj87093@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/sahil-kumar-a17b25259/" target="_blank">LinkedIn</a>
+          <a href="https://x.com/Sahilsi34132150" target="_blank">Twitter</a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form id="message-form" action="https://formspree.io/f/mqaybbob" method="POST">
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Sahil Singh | Built with thinking "what-if?"</p>
+  </footer>
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
